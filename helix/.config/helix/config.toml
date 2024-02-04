@@ -1,6 +1,9 @@
+theme = "acme"
+
 [editor]
 line-number = "relative"
 mouse = false
+auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -9,3 +12,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal."space"]
+o = "file_picker_in_current_buffer_directory"
