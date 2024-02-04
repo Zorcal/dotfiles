@@ -10,4 +10,4 @@ formatter = { command = "shfmt" }
 [[language]]
 name = "go"
 indent = { tab-width = 4, unit = "\t" }
-formatter = { command = "gofumpt" }
+formatter = { command = "sh", args = [ "-c", "gofumpt <&0 | goimports -local \"github.com/formulatehq\"" ] }
