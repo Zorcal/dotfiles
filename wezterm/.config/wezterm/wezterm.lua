@@ -65,6 +65,7 @@ end)
 ------------------------------------
 
 config.color_scheme = 'ayu'
+-- config.color_scheme = 'Alabaster'
 
 -- Transparency
 config.window_background_opacity = 1
