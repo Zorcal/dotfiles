@@ -155,6 +155,8 @@ return {
             end)
           end, opts)
 
+          -- Some lsp keymaps are configured in fzf config
+
           local filetype = vim.bo[bufnr].filetype
           if disable_semantic_tokens[filetype] then
             client.server_capabilities.semanticTokensProvider = nil
