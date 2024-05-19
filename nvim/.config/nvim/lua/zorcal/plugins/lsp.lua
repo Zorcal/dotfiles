@@ -22,10 +22,10 @@ return {
       require("vim.lsp.log").set_format_func(vim.inspect)
 
       require("neodev").setup {
-        -- library = {
-        --   plugins = { "nvim-dap-ui" },
-        --   types = true,
-        -- },
+        library = {
+          plugins = { "nvim-dap-ui" },
+          types = true,
+        },
       }
 
       local capabilities = nil
