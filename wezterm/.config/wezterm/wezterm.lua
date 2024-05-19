@@ -203,11 +203,7 @@ config.keys = {
         -- Add pre-defined workspaces to the list of choices if they exist.
         local dirs = {
           {
-            path = wezterm.home_dir .. '/.dotfiles',
-            with_subdirs = false,
-          },
-          {
-            path = wezterm.home_dir .. '/.config/nvim',
+            path = wezterm.home_dir .. '/dots',
             with_subdirs = false,
           },
           {
@@ -221,6 +217,14 @@ config.keys = {
           {
             path = wezterm.home_dir .. '/Projects',
             with_subdirs = true,
+          },
+          {
+            path = wezterm.home_dir .. '/Downloads',
+            with_subdirs = false,
+          },
+          {
+            path = wezterm.home_dir .. '/Documents',
+            with_subdirs = false,
           },
         }
         for _, dir in pairs(dirs) do
