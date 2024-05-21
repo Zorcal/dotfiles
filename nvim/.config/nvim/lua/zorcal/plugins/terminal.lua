@@ -13,7 +13,7 @@ return {
       end,
     }
 
-    vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
+    vim.keymap.set("t", "<M-n>", "<c-\\><c-n>")
     vim.keymap.set("t", "<C-w>", "<C-\\><C-N><C-w>")
     vim.api.nvim_create_autocmd({ "TermOpen", "BufEnter" }, {
       pattern = { "*" },
