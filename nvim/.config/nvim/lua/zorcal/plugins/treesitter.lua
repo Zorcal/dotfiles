@@ -33,10 +33,14 @@ return {
             lookahead = true,
             include_surrounding_whitespace = true,
             keymaps = {
+              ["af"] = "@function.outer",
+              ["if"] = "@function.inner",
               ["aa"] = "@parameter.outer", -- 'a' for argument
               ["ia"] = "@parameter.inner",
               ["ac"] = "@comment.outer",
               ["ic"] = "@comment.inner",
+              ["al"] = "@loop.outer",
+              ["il"] = "@loop.inner",
             },
             selection_modes = {
               ["@parameter.outer"] = "v", -- charwise
@@ -51,12 +55,14 @@ return {
               ["]f"] = "@function.outer",
               ["]a"] = "@parameter.inner",
               ["]c"] = "@comment.outer",
+              ["]l"] = "@loop.outer",
             },
             goto_next_end = {},
             goto_previous_start = {
               ["[f"] = "@function.outer",
               ["[a"] = "@parameter.inner",
               ["[c"] = "@comment.outer",
+              ["[l"] = "@loop.outer",
             },
             goto_previous_end = {},
             goto_next = {},
