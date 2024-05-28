@@ -56,3 +56,5 @@ vim.cmd "cnoreabbrev QA qa"
 
 -- Files we never want to edit
 vim.opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
+
+vim.opt.jumpoptions = "stack,view"
