@@ -2,14 +2,14 @@ local opt = vim.opt
 
 opt.inccommand = "split"
 
-vim.opt.mouse = ""
+opt.mouse = ""
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.textwidth = 0
-vim.opt.smartindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
+opt.textwidth = 0
+opt.smartindent = true
 
 opt.smartcase = true
 opt.ignorecase = true
@@ -30,9 +30,9 @@ opt.clipboard = "unnamedplus"
 -- Don't have `o` add a comment
 opt.formatoptions:remove "o"
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
+opt.swapfile = false
+opt.backup = false
+opt.undofile = true
 opt.undodir = os.getenv "HOME" .. "/.local/state/nvim/undodir"
 
 opt.scrolloff = 8
@@ -55,6 +55,9 @@ vim.cmd "cnoreabbrev Qa qa"
 vim.cmd "cnoreabbrev QA qa"
 
 -- Files we never want to edit
-vim.opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
+opt.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
 
-vim.opt.jumpoptions = "stack,view"
+opt.jumpoptions = "stack,view"
+
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldtext = "v:lua.vim.treesitter.foldtext()"
