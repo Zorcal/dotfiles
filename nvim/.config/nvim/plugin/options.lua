@@ -25,8 +25,6 @@ opt.splitright = true
 opt.signcolumn = "yes"
 opt.shada = { "'10", "<0", "s10", "h" }
 
-opt.clipboard = "unnamedplus"
-
 -- Don't have `o` add a comment
 opt.formatoptions:remove "o"
 
