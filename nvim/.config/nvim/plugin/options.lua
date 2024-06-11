@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+vim.o.background = "light"
+
 opt.inccommand = "split"
 
 opt.mouse = ""
