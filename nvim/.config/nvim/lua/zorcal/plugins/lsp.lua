@@ -73,6 +73,7 @@ return {
         zls = true,
         sqlls = true,
         terraformls = true,
+        -- gleam = true,
       }
 
       local servers_to_install = vim.tbl_filter(function(key)

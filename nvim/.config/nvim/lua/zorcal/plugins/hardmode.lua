@@ -11,7 +11,4 @@ return {
       disabled_filetypes = { "qf", "netrw", "NvimTree", "lazy", "mason", "oil" },
     },
   },
-  -- {
-  --   "tris203/precognition.nvim",
-  -- },
 }
