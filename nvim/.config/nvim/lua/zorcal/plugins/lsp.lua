@@ -73,10 +73,14 @@ return {
         zls = true,
         sqlls = true,
         terraformls = true,
-        -- gleam = true,
+        gleam = true,
       }
 
       local servers_to_install = vim.tbl_filter(function(key)
+        if key == "gleam" then
+          -- Gleam not supported by Mason (yet?)
+          return false
+        end
         local t = servers[key]
         if type(t) == "table" then
           return not t.manual_install
